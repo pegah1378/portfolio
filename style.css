@@ -1,0 +1,140 @@
+:root {
+  --backgrounds-color: #9a9483;
+  --border-radius: 4px;
+  --text-color: #e5dcc3;
+  --btnF-color: #222831;
+  --btnS-color: #393e46;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.glassy-text {
+  background-color: rgba(255, 255, 255, 0.8);
+
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .glassy-text {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(1px);
+    background-color: rgba(15, 10, 10, 0.5);
+  }
+}
+
+body {
+  background-image: url("image/fernando-hernandez-JdoofvUDUwc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+#nv {
+  background-color: var(--backgrounds-color) !important;
+  opacity: 0.7 !important;
+  border-radius: var(--border-radius) !important;
+}
+p {
+  font-family: "Cookie", cursive;
+}
+#name {
+  text-align: center !important;
+  font-weight: bolder !important;
+  font-size: 48px !important;
+  font-family: "Cookie", cursive;
+  font-style: italic;
+  color: var(--text-color);
+}
+#info {
+  text-align: center !important;
+  font-size: 28px !important;
+  font-family: "Cookie", cursive;
+  font-style: italic;
+  color: var(--text-color);
+}
+#btns {
+  display: flex;
+
+  justify-content: center;
+}
+#first-btn {
+  margin-right: 10px !important;
+  background-color: var(--btnF-color);
+  border: var(--btnF-color);
+  opacity: 0.8;
+}
+#second-btn {
+  background-color: var(--btnS-color);
+  border: var(--btnS-color);
+  opacity: 0.8;
+}
+#fname {
+  text-align: center;
+  color: var(--text-color);
+}
+#sname {
+  text-align: center;
+  color: var(--text-color);
+}
+#weather {
+  box-shadow: var(--box-shadow);
+  border: 5px solid var(--backgrounds-color);
+  border-radius: 8px !important;
+  opacity: 0.9;
+}
+#weather:hover {
+  cursor: pointer;
+}
+#ticket {
+  box-shadow: var(--box-shadow);
+  border: 5px solid #5d8bf4;
+  border-radius: 8px !important;
+  opacity: 0.9;
+}
+#ticket:hover {
+  cursor: pointer;
+}
+p {
+  text-align: center;
+  color: var(--text-color);
+}
+#tbtn {
+  padding: 18px;
+  opacity: 0.7;
+}
+#aboutbody {
+  background-image: url("image/safar-safarov-MSN8TFhJ0is-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+}
